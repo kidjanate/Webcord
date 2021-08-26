@@ -12,7 +12,7 @@ from subprocess import call
 import glob
 import os
 
-TOKEN = 'ODc2ODM0NzA2NDMwMjUxMDU5.YRp19A.2oQM-9j_LZ4rZ6PSP2I2QU-_gH0'
+TOKEN = ps.getenv("TOKEN")
 PREFIX = 'me!'
 INTENTS = discord.Intents.default()
 bot = commands.Bot(command_prefix=PREFIX, intents=INTENTS)
